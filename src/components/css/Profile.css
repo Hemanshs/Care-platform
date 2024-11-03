@@ -1,0 +1,196 @@
+/* Profile.css & Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background: #002147;
+  color: #ffffff;
+  width: 280px;
+  height: 100vh;
+  padding: 40px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-button {
+  width: 100%;
+  background: #005eb8;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-button a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-button:hover {
+  background: #003c71;
+}
+
+.profile-section {
+  margin-left: 300px; /* Leave space for the fixed sidebar */
+  padding: 50px;
+  background: #f1f8e9; /* A light green shade for contrast */
+  color: #002147;
+  width: calc(100% - 300px); /* Adjust width to accommodate sidebar */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: calc(100% - 60px); /* Adjust width to leave space for the Edit button */
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.editable-field {
+  display: flex;
+  align-items: center;
+}
+
+.profile-edit {
+  margin-left: 10px;
+  padding: 5px 10px;
+  height: 30px;
+  width: auto;
+  background: #005eb8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-edit:hover {
+  background: #003c71;
+}
+
+/* Make the selected preferences more visible */
+.preferences-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preference-item {
+  background-color: #1c4979; /* Blue background for contrast */
+  color: #ffffff; /* White text for readability */
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.preference-item button {
+  background-color: #d9534f; /* Red for delete button */
+  color: #ffffff;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px; /* Center the "x" inside the button */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preference-item button:hover {
+  background-color: #c9302c;
+}
+
+/* Style for the select dropdown */
+select {
+  background-color: #1c4979; /* Make the background blue for contrast */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.select-preferences {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  background-color: #f8f8fa; /* Light gray background for contrast */
+  color: hsl(0, 0%, 20%); /* Dark text for readability */
+}
+
+button {
+  padding: 10px 20px;
+  background: #005eb8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #003c71;
+}
+.edit-container {
+  display: flex;
+  align-items: center;
+}
+
+.save-button, .cancel-button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button {
+  background: #28a745; /* Green for Save */
+  color: #ffffff;
+}
+
+.cancel-button {
+  background: #d9534f; /* Red for Cancel */
+  color: #ffffff;
+}
+
+.cancel-button:hover, .save-button:hover {
+  opacity: 0.8; /* Dim on hover */
+}

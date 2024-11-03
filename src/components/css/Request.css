@@ -1,0 +1,99 @@
+/* CreateRequest.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #b2dfdb, #80cbc4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .create-request-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #00695c;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #004d40;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #00897b;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.2);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button.create-request-button {
+    background: #00796b;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button.create-request-button:hover {
+    background: #004d40;
+    transform: translateY(-2px);
+  }
+  
+  button.create-request-button:active {
+    transform: translateY(0);
+  }
+  
+  select {
+    appearance: none;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNOC42NiAxMS4wNTVMNC4zNCA2LjczNEw1LjQ3NSA1LjU5OEw4LjY2IDguNzgybDMuMTg1LTMuMTgybDEuMTM1IDEuMTM1eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==") no-repeat right 0.75rem center;
+    background-size: 1.2rem;
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 137, 123, 0.2);
+  }
+  
+  .select-wrapper {
+    position: relative;
+  }
+  

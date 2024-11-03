@@ -1,0 +1,150 @@
+/* CreateRequest.css & Shared CSS for consistency */
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    background: #002147;
+    color: #ffffff;
+    width: 280px;
+    height: 100vh;
+    padding: 40px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .sidebar-button {
+    width: 100%;
+    background: #005eb8;
+    color: #ffffff;
+    font-size: 1.5rem;  /* Increase font size for better readability */
+    padding: 20px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-button a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar-button:hover {
+    background: #003c71;
+  }
+  
+  .create-request-section {
+    margin-left: 300px;  /* Leave space for the fixed sidebar */
+    padding: 50px;
+    background: #f1f8e9; /* A light green shade for better contrast*/
+    color: #002147;
+    width: calc(100% - 300px);  /* Adjust width to accommodate sidebar */
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    gap: 30px;
+  }
+  
+ .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preferences-list {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .create-request-section .preferences-list .preference-item {
+    background-color: #095cc9; /* Blue background for contrast */
+  color: #ffffff; /* White text for readability */
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  position: relative; 
+  }
+  
+  .preference-item button {
+    background-color: #d9534f; /* Red for delete button */
+    color: #ffffff;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    display: flex; /* Flex to center the 'x' */
+    align-items: center;
+    justify-content: center;
+    padding: 0; /* Remo
+
+    
+  
+  }
+  
+  .preference-item button:hover {
+    background-color: #c9302c; /* Darker red on hover for delete button */
+  }
+  
+  /* Style for the select dropdown */
+  .select-preferences {
+    background-color: #1c4979; /* Blue background */
+    color: #ffffff; /* White text for contrast */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 10px;
+    align-items: center;
+    background: #005eb8;
+    color: white;
+    border: skyblue;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  button:hover {
+    background: #003c71;
+  }
+  
+  button:disabled {
+    background: #cccccc; /* Gray out button when disabled */
+    cursor: not-allowed;
+  }
+  

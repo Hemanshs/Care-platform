@@ -1,0 +1,148 @@
+/* General container styling */
+.dashboard-container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background: #002147;
+  color: #ffffff;
+  width: 280px;
+  height: 100vh;
+  padding: 40px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-button {
+  width: 100%;
+  background: #005eb8;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-button a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-button:hover {
+  background: #003c71;
+}
+
+/* Dashboard content styling */
+.dashboard-content {
+  margin-left: 300px;
+  padding: 50px;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* A gradient for a modern look */
+  color: #ffffff;
+  min-height: 100vh;
+  width: calc(100% - 300px);
+}
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px 0; /* Add some margin to separate the welcome section from the rest */
+  padding: 20px;
+  background: #f0f4f8; /* Light background for contrast */
+  border-radius: 8px;
+}
+
+.welcome-section h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #002147; /* Darker color for better visibility */
+}
+
+.welcome-section h2 {
+  font-size: 1.5rem;
+  margin: 5px 0 0 0;
+  color: #005eb8; /* Use a color with good contrast for the role */
+}
+
+/* Rest of the CSS for the dashboard */
+
+.user-section, .requests-section {
+  margin: 20px 0;
+}
+
+.user-card, .request-card {
+  background: #ffffff; /* White background for the cards */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.user-card h3, .request-card h3 {
+  color: #002147;
+}
+
+.user-list, .request-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.user-card, .request-card {
+  background: #ffffff;
+  color: #002147;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height to center it vertically */
+}
+.user-card h3, .request-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #005eb8;
+}
+
+.user-card p, .request-card p {
+  margin: 5px 0;
+}
+
+.user-card ul, .request-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+  .dashboard-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .sidebar-button {
+    margin-bottom: 15px;
+  }
+}
