@@ -1,0 +1,1 @@
+web: cd care-platform-backend && npm install && npm start
